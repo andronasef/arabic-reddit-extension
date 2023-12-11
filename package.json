@@ -1,0 +1,38 @@
+{
+  "name": "arabic-reddit",
+  "private": true,
+  "version": "0.0.1",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "packaging": "node packaging.js",
+    "build": "tsc && vite build && npm run packaging",
+    "lint": "eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "archiver": "^6.0.1",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "zip-a-folder": "^3.1.5"
+  },
+  "devDependencies": {
+    "@crxjs/vite-plugin": "2.0.0-beta.21",
+    "@types/node": "^20.10.4",
+    "@types/react": "^18.2.37",
+    "@types/react-dom": "^18.2.15",
+    "@typescript-eslint/eslint-plugin": "^6.10.0",
+    "@typescript-eslint/parser": "^6.10.0",
+    "@vitejs/plugin-react": "^4.2.0",
+    "autoprefixer": "^10.4.16",
+    "eslint": "^8.53.0",
+    "eslint-plugin-react-hooks": "^4.6.0",
+    "eslint-plugin-react-refresh": "^0.4.4",
+    "postcss": "^8.4.32",
+    "tailwindcss": "^3.3.6",
+    "ts-node": "^10.9.2",
+    "tslib": "^2.6.2",
+    "typescript": "^5.3.3",
+    "vite": "^4.5.0"
+  }
+}
