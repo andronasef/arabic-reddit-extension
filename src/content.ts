@@ -30,10 +30,17 @@ function addFont(fontName: string) {
       }
       `);
 }
+
+// Get all the elements except the editor
+function getElements() {
+  return document.querySelectorAll("*:not(.DraftEditor-root)");
+}
+
 function fixDir() {
   logger(`fixing dir`);
-  const allTags = document.querySelectorAll("*");
-  allTags.forEach((e) => e.setAttribute("dir", "auto"));
+
+  const allTags = getElements();
+  allTags.forEach((el) => el.setAttribute("dir", "auto"));
 
   // check if it fucking work if development
   if (import.meta.env.DEV)
@@ -45,7 +52,7 @@ function fixDir() {
   // Create an observer instance
   const observer = new MutationObserver((mutations) => {
     mutations.forEach(() => {
-      const allTags = document.querySelectorAll("*");
+      const allTags = getElements();
       allTags.forEach((e) => e.setAttribute("dir", "auto"));
     });
   });
