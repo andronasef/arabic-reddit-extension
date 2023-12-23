@@ -32,8 +32,6 @@ function addFont(fontName: string) {
 }
 function fixDir() {
   logger(`fixing dir`);
-  const allTags = document.querySelectorAll("p");
-  allTags.forEach((e) => e.setAttribute("dir", "auto"));
 
   // check if it fucking work if development
   if (import.meta.env.DEV)
@@ -58,8 +56,4 @@ function fixArabic() {
   fixDir();
 }
 
-// run on page load / changes
-window.addEventListener("popstate", () => fixArabic());
-// run on page load
-document.addEventListener("DOMContentLoaded", () => fixArabic());
 fixArabic();
