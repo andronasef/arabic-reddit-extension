@@ -32,8 +32,6 @@ function addFont(fontName: string) {
 }
 function fixDir() {
   logger(`fixing dir`);
-  const allTags = document.querySelectorAll("*");
-  allTags.forEach((e) => e.setAttribute("dir", "auto"));
 
   // check if it fucking work if development
   if (import.meta.env.DEV)
@@ -42,15 +40,12 @@ function fixDir() {
         background-color:red
         }`);
 
-  // Create an observer instance
-  const observer = new MutationObserver((mutations) => {
-    mutations.forEach(() => {
-      const allTags = document.querySelectorAll("*");
-      allTags.forEach((e) => e.setAttribute("dir", "auto"));
-    });
-  });
-
-  observer.observe(document.body, { childList: true, subtree: true });
+  // fix direction in css
+  addStyle(`
+  p {
+    unicode-bidi: plaintext;
+    text-align: start;
+  }`)
 }
 
 function fixArabic() {
@@ -58,8 +53,4 @@ function fixArabic() {
   fixDir();
 }
 
-// run on page load / changes
-window.addEventListener("popstate", () => fixArabic());
-// run on page load
-document.addEventListener("DOMContentLoaded", () => fixArabic());
 fixArabic();
