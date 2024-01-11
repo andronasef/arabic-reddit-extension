@@ -33,19 +33,12 @@ function addFont(fontName: string) {
 function fixDir() {
   logger(`fixing dir`);
 
-  // check if it fucking work if development
-  if (import.meta.env.DEV)
-    addStyle(`
-    :dir(rtl) {
-        background-color:red
-        }`);
-
   // fix direction in css
   addStyle(`
-  p {
+  p, h1 {
     unicode-bidi: plaintext;
     text-align: start;
-  }`)
+  }`);
 }
 
 function fixArabic() {
