@@ -5,7 +5,7 @@ A browser extension that fixes arabic language in reddit
 
 ## How to use? 🤔
 
-Just install it and it will work 😂
+Just install it from [chrome web store](https://chromewebstore.google.com/detail/arabic-reddit/mjlnfccfhofafpghdpmoocghifigilim) and it will work 😂
 
 But for Firefox (Tampermonkey Users) => please install it from [here!](https://github.com/andronasef/arabic-reddit-extension/raw/main/extras/arabic-reddit.user.js)
 
