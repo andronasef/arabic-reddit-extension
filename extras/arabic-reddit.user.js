@@ -1,11 +1,10 @@
 // ==UserScript==
 // @name           Reddit Better Font
-// @version        1.0
+// @version        1.1
 // @description    Script that fixes arabic language in reddit
 // @author         andronasef.dev
 // @match          https://www.reddit.com/*
 // @icon           https://www.google.com/s2/favicons?domain=reddit.com&sz=128
-// @run-at         document-start
 // ==/UserScript==
 
 (function () {
