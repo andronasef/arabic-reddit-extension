@@ -55,6 +55,17 @@ All notable changes to the Arabic Reddit extension will be documented in this fi
 - 🎨 Success/error messaging system
 - 🎨 Reddit-themed dark mode design
 - 🎨 Extension icon in header
+- 🎨 Custom scrollbars for better UX
+
+#### Userscript Version
+
+- 🆕 **Tampermonkey/Greasemonkey Support** - Full-featured userscript version
+- 🆕 **Floating Panel UI** - Reddit-themed popup with all Extension features
+- 🆕 **GM Storage** - Persistent storage using GM_setValue/GM_getValue
+- 🆕 **No CORS Issues** - Direct API calls (no background worker needed)
+- 🆕 **100% Feature Parity** - Same dynamic fonts, tabs, search, and RTL detection
+- 🆕 **7-Day Caching** - Same caching strategy as Extension
+- 🆕 **Lightweight** - Single 383-line JavaScript file
 
 ### 📁 New Files Added
 
@@ -79,6 +90,10 @@ src/
     ├── CORS_FIX.md                 # NEW: CORS solution documentation
     ├── SCREENSHOTS.md              # UI examples and screenshots
     └── USER_GUIDE_AR.md            # Arabic user guide
+
+extras/
+├── arabic-reddit.user.js           # NEW: Full-featured Tampermonkey userscript
+└── USERSCRIPT_README.md            # NEW: Userscript documentation
 ```
 
 ### 🔄 Modified Files

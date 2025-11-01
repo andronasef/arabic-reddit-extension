@@ -5,11 +5,23 @@ A browser extension that fixes arabic language in reddit
 
 ## How to use? 🤔
 
+### Chrome Extension (Recommended)
+
 Just install it from [chrome web store](https://chromewebstore.google.com/detail/arabic-reddit/mjlnfccfhofafpghdpmoocghifigilim) and it will work 😂
 
-But for Firefox (Tampermonkey Users) => please install it from [here!](https://github.com/andronasef/arabic-reddit-extension/raw/main/extras/arabic-reddit.user.js)
+### Userscript (Firefox, Tampermonkey)
+
+For Firefox and Tampermonkey users, install our full-featured userscript:
+
+1. Install [Tampermonkey](https://www.tampermonkey.net/) or [Greasemonkey](https://addons.mozilla.org/en-US/firefox/addon/greasemonkey/)
+2. Install the userscript from [here!](https://github.com/andronasef/arabic-reddit-extension/raw/main/extras/arabic-reddit.user.js)
+3. Enjoy all features with a floating panel UI 🎨
+
+**Note**: The userscript version has 100% feature parity with the Chrome Extension!
 
 ## Features ✨
+
+### Chrome Extension Features
 
 - **Dynamic Font Selection**: Automatically loads 100+ Arabic fonts and 50+ English fonts from Google Fonts API
 - **Smart Font Loading**: Fonts are fetched dynamically from [Google Web Fonts Helper API](https://gwfh.mranftl.com/api/fonts/)
@@ -18,9 +30,20 @@ But for Firefox (Tampermonkey Users) => please install it from [here!](https://g
 - **Live Preview**: See how your selected fonts look before applying them
 - **Font Caching**: Downloaded fonts and font lists are cached locally for faster loading
 - **Base64 Encoding**: Fonts are stored as Base64 for security and offline usage
+- **Custom Font Upload**: Upload your own font files (.woff2, .woff, .ttf, .otf)
 - **Fixes Arabic Language Direction**: Automatically detects and fixes text direction
 - **Smart Unicode Ranges**: Separate font application for Arabic (U+0600-06FF) and English (U+0020-007F) characters
 - **Offline Support**: Cached fonts work without internet connection
+
+### Userscript Features (100% Parity!)
+
+- ✅ **All Extension Features** included
+- 🎨 **Floating Panel UI** - Beautiful Reddit-themed popup
+- 🔍 **Search & Tabs** - Same search and tab system as Extension
+- 💾 **GM Storage** - Persistent storage using Tampermonkey APIs
+- ⚡ **Smart Caching** - 7-day font list cache
+- 🔄 **RTL Detection** - Same smart Arabic detection
+- 📦 **Single File** - Just 383 lines of JavaScript!
 
 ### Available Fonts
 
