@@ -26,10 +26,20 @@ export default defineManifest(async (env) => ({
     default_popup: "index.html",
     default_icon: "public/icon.png",
   },
+  background: {
+    service_worker: "src/background.ts",
+    type: "module",
+  },
   content_scripts: [
     {
       matches: ["https://*.reddit.com/*"],
       js: ["src/content.ts"],
     },
+  ],
+  permissions: ["storage"],
+  host_permissions: [
+    "https://fonts.googleapis.com/*",
+    "https://fonts.gstatic.com/*",
+    "https://gwfh.mranftl.com/*",
   ],
 }));
