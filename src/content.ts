@@ -110,8 +110,9 @@ function addFont(fontName: string) {
     @import url('https://fonts.googleapis.com/css2?family=${fontName
       .split(" ")
       .join("+")}&display=swap');
-      p {
+      p,a,h1 shreddit-comment > div {
           overflow:hidden;
+          opacity: 80%;
       }
       * {
           font-family: ${fontName}, sans-serif !important;
