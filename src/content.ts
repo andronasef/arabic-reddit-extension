@@ -129,7 +129,7 @@ function fixDir() {
   /* إصلاح اتجاه النص للعناوين والفقرات - استخدام unicode-bidi فقط */
   p, h1, h2, h3, h4, h5, h6 {
     unicode-bidi: plaintext !important;
-    text-align: start !important;
+    text-align: right !important;
   }
   
   /* عناوين المنشورات - unicode-bidi plaintext يكتشف الاتجاه تلقائياً */
@@ -138,7 +138,7 @@ function fixDir() {
   shreddit-post [slot="title"],
   a.block.text-neutral-content-strong {
     unicode-bidi: plaintext !important;
-    text-align: start !important;
+    text-align: right !important;
     display: block !important;
   }
   
@@ -150,7 +150,7 @@ function fixDir() {
   .md.feed-card-text-preview,
   div[class*="feed-card-text-preview"] {
     unicode-bidi: plaintext !important;
-    text-align: start !important;
+    text-align: right !important;
   }
   
   /* الفقرات داخل المحتوى */
@@ -159,7 +159,7 @@ function fixDir() {
   .md p,
   shreddit-post p {
     unicode-bidi: plaintext !important;
-    text-align: start !important;
+    text-align: right !important;
     display: block !important;
   }
   
@@ -170,7 +170,7 @@ function fixDir() {
   [data-testid="comment"],
   [data-testid="comment"] p {
     unicode-bidi: plaintext !important;
-    text-align: start !important;
+    text-align: right !important;
   }
   `);
 }
